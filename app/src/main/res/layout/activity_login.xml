@@ -59,11 +59,6 @@
             android:layout_marginTop="16dp"
             android:layout_marginLeft="180dp"/>
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
     </LinearLayout>
 
 
