@@ -1,79 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/blue_3"
-        android:padding="16dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_action_name"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_close"
-            android:layout_alignParentRight="true"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Location , food, price"
-            android:background="@color/white"
-            android:layout_centerHorizontal="true"
-            android:textSize="24sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nearby Location"
-            android:textSize="22sp"
-            android:textColor="@color/white"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="80dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_location"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="250dp"/>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:orientation="vertical">
 
-        <ImageView
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:src="@drawable/brown_logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/button"
-            android:layout_alignBottom="@+id/button"
-            android:layout_centerHorizontal="true"
-            android:text="Brown Cafe"
-            android:textSize="22sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
             android:background="@color/blue_3"
-            android:layout_alignParentRight="true"
-            android:id="@+id/button" />
+            android:padding="16dp">
 
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_category" />
 
-</LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_close" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:hint="Location , food, price"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="80dp"
+                android:text="Nearby Location"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="250dp"
+                android:src="@drawable/ic_location" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/brown_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button"
+                android:layout_alignBottom="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:text="Brown Cafe"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue_3"
+                android:text="View" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        app:headerLayout="@layout/navigation"
+        app:menu="@menu/menu_1"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
