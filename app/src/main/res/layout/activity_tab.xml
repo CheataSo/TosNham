@@ -5,12 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <RelativeLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="50dp"
         android:background="@color/blue_3">
-    </android.support.v7.widget.Toolbar>
+       <EditText
+           android:layout_width="370dp"
+           android:layout_height="wrap_content"
+           android:hint="Location,food,price"
+           android:layout_marginTop="10dp"
+           android:background="@color/white"
+           android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_close"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/lyt_content"
@@ -20,10 +33,9 @@
         android:orientation="vertical">
 
     </LinearLayout>
-
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         app:menu="@menu/menu_tab">
 
     </android.support.design.widget.BottomNavigationView>
