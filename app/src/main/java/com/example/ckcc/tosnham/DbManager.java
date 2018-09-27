@@ -36,7 +36,7 @@ public class DbManager extends SQLiteOpenHelper
         SQLiteDatabase db = getReadableDatabase();
 
         //Selecting data
-        Cursor cursor = db.query("tblEvent",null,null,null,"id Desc");
+        Cursor cursor = db.query("tblEvent",null,null,null,null,null,"id Desc");
         Event[] events = new Event[cursor.getCount()];
         int index = 0;
 
