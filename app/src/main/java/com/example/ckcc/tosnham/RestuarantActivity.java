@@ -23,7 +23,7 @@ public class RestuarantActivity extends AppCompatActivity
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-
+        //Create object for RestuarantAdpater class
+        RestuarantAdapter restuarantAdapter = new RestuarantAdapter();
     }
 }

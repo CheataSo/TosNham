@@ -18,7 +18,6 @@ public class EventActivity extends AppCompatActivity
         setContentView(R.layout.restuarant_event_activity);
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
-
         //Layout Manager
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

@@ -12,6 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DbManager extends SQLiteOpenHelper
 {
     //Db schema
+    //Create Database
     public DbManager(Context context) {
         super(context,"mydb",null, 1);
     }

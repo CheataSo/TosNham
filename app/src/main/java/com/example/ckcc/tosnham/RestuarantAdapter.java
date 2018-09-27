@@ -1,3 +1,5 @@
+package com.example.ckcc.tosnham;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -5,14 +7,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ckcc.tosnham.R;
-
 /**
  * Created by CKCC on 9/27/2018.
  */
 
 public class RestuarantAdapter extends RecyclerView.Adapter<RestuarantAdapter.RestuarantViewHolder>
 {
+    //Create Array object of Restuarant
+    Restuarant[] restuarants;
     //for loading xml or java file
     @Override
     public RestuarantViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -26,8 +28,12 @@ public class RestuarantAdapter extends RecyclerView.Adapter<RestuarantAdapter.Re
     }
 
     @Override
-    public void onBindViewHolder(RestuarantViewHolder holder, int position) {
-
+    public void onBindViewHolder(RestuarantViewHolder holder, int position)
+    {
+       /* Event event = data[position];
+        holder.txtTitle.setText(event.getTitle());*/
+       Restuarant restuarant= restuarants[position];
+       holder.textView.setText(restuarant.getName());
     }
 
     @Override
